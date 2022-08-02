@@ -219,10 +219,10 @@ return a}p=B.e.ag(n,m+4,B.e.cu(n,")"))
 o=!0}else if(B.e.dv(n,"  unicode-range:")){q=A.b([],r)
 l=B.e.ag(n,17,n.length-1).split(", ")
 for(n=l.length,k=0;k<n;++k){j=J.aQv(l[k],"-")
-if(j.length===1){i=A.bf(B.e.dd(B.d.gdI(j),2),16)
+if(j.length===1){i=A.bg(B.e.dd(B.d.gdI(j),2),16)
 q.push(new A.al(i,i))}else{h=j[0]
 g=j[1]
-q.push(new A.al(A.bf(B.e.dd(h,2),16),A.bf(g,16)))}}o=!0}else{if(n==="}"){if(p==null||q==null){$.db().$1(a0+a2)
+q.push(new A.al(A.bg(B.e.dd(h,2),16),A.bg(g,16)))}}o=!0}else{if(n==="}"){if(p==null||q==null){$.db().$1(a0+a2)
 return a}a1.push(new A.nj(p,a3,q))}else continue
 o=!1}}if(o){$.db().$1(a0+a2)
 return a}s=t.V0
@@ -6370,7 +6370,7 @@ this.c=0},
 aFo(a,b){return A.aGF(a,b,null)},
 aS6(a){var s=typeof a=="number"||typeof a=="string"
 if(s)throw A.h(A.a6(a,u.fc,null))},
-bf(a,b){var s=A.E2(a,b)
+bg(a,b){var s=A.E2(a,b)
 if(s!=null)return s
 throw A.h(A.d7(a,null,null))},
 c(a){var s=A.E1(a)
@@ -6583,13 +6583,13 @@ if(b!=null){s=new A.a3d()
 r=b.b
 q=r[1]
 q.toString
-p=A.bf(q,c)
+p=A.bg(q,c)
 q=r[2]
 q.toString
-o=A.bf(q,c)
+o=A.bg(q,c)
 q=r[3]
 q.toString
-n=A.bf(q,c)
+n=A.bg(q,c)
 m=s.$1(r[4])
 l=s.$1(r[5])
 k=s.$1(r[6])
@@ -6599,7 +6599,7 @@ if(r[8]!=null){h=r[9]
 if(h!=null){g=h==="-"?-1:1
 q=r[10]
 q.toString
-f=A.bf(q,c)
+f=A.bg(q,c)
 l-=g*(s.$1(r[11])+60*f)}e=!0}else e=!1
 d=A.acm(p,o,n,m,l,k,i+B.a.bv(j%1000/1000),e)
 if(d==null)throw A.h(A.d7("Time out of range",a,c))
@@ -6962,13 +6962,13 @@ aVq(a){return A.aWN(a,0,a.length,B.F,!1)},
 aVp(a,b,c){var s,r,q,p,o,n,m="IPv4 address should contain exactly 4 parts",l="each part must be in the range 0..255",k=new A.aiy(a),j=new Uint8Array(4)
 for(s=b,r=s,q=0;s<c;++s){p=B.e.b4(a,s)
 if(p!==46){if((p^48)>9)k.$2("invalid character",s)}else{if(q===3)k.$2(m,s)
-o=A.bf(B.e.ag(a,r,s),null)
+o=A.bg(B.e.ag(a,r,s),null)
 if(o>255)k.$2(l,r)
 n=q+1
 j[q]=o
 r=s+1
 q=n}}if(q!==3)k.$2(m,c)
-o=A.bf(B.e.ag(a,r,c),null)
+o=A.bg(B.e.ag(a,r,c),null)
 if(o>255)k.$2(l,r)
 j[q]=o
 return j},
@@ -8782,8 +8782,8 @@ n.toString
 l=m.KT("val","*")
 l=l==null?i:l.b
 l.toString
-k=A.bf(n,i)
-j=A.bf(l,i)
+k=A.bg(n,i)
+j=A.bg(l,i)
 h.l(0,n,new A.Wo(k,j))
 if(p<k)p=k
 if(o<j)o=j}}a.d=h
@@ -10586,17 +10586,17 @@ if(n.gtw()==="dart"||n.gtw()==="package"){l=n.gt6()[0]
 m=B.e.YG(n.gB7(n),A.n(n.gt6()[0])+"/","")}else l=i
 r=s[1]
 r.toString
-r=A.bf(r,null)
+r=A.bg(r,null)
 k=n.gtw()
 j=s[4]
 if(j==null)j=-1
 else{j=j
 j.toString
-j=A.bf(j,null)}s=s[5]
+j=A.bg(j,null)}s=s[5]
 if(s==null)s=-1
 else{s=s
 s.toString
-s=A.bf(s,null)}return new A.kl(a,r,k,l,m,j,s,p,q)},
+s=A.bg(s,null)}return new A.kl(a,r,k,l,m,j,s,p,q)},
 kl:function kl(a,b,c,d,e,f,g,h,i){var _=this
 _.a=a
 _.b=b
@@ -12327,7 +12327,7 @@ this.b=b},
 alb:function alb(a){this.a=a},
 alc:function alc(a){this.a=a},
 JG:function JG(){},
-bg(a,b,c){var s=null
+bf(a,b,c){var s=null
 return new A.MK(b,s,s,s,c,B.t,s,!1,a,s)},
 bb(a,b,c,d,e,f,g,h,i,a0,a1,a2,a3,a4,a5,a6,a7,a8){var s=null,r=a0==null&&i==null?s:new A.UU(i,a0),q=i==null?s:new A.UW(i),p=d==null?s:new A.UT(d),o=f==null&&c==null?s:new A.UV(f,c),n=a3==null?s:new A.cE(a3,t.GJ),m=a1==null?s:new A.cE(a1,t.M5),l=h==null?s:new A.cE(h,t.yG),k=g==null?s:new A.cE(g,t.yG),j=a4==null?s:new A.cE(a4,t.w2)
 return A.L5(a,b,new A.US(a2,a0),p,e,s,r,k,l,o,q,m,n,j,s,a5,s,a6,new A.cE(a7,t.EN),a8)},
@@ -33464,7 +33464,7 @@ s=r[s]
 if(s!==1&&s!==2)A.q(A.dq("Invalid arguments for 'overflow' method sent to dev.flutter/channel-buffers (second argument must be a boolean)"))
 break
 default:A.q(A.dq("Unrecognized method '"+o+"' sent to dev.flutter/channel-buffers"))}}else{k=A.b(B.F.eM(0,r).split("\r"),t.s)
-if(k.length===3&&J.l(k[0],"resize"))s.YL(0,k[1],A.bf(k[2],null))
+if(k.length===3&&J.l(k[0],"resize"))s.YL(0,k[1],A.bg(k[2],null))
 else A.q(A.dq("Unrecognized message "+A.n(k)+" sent to dev.flutter/channel-buffers."))}}finally{c.$1(null)}else $.a0C().aua(a,b,c)},
 akL(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h=this
 switch(a){case"flutter/skia":s=B.aY.ko(b)
@@ -34266,7 +34266,7 @@ if(p)return
 r.f=!0
 q=q.value
 q.toString
-s=A.bf(q,null)
+s=A.bg(q,null)
 q=r.d
 if(s>q){r.d=q+1
 r=$.bG()
@@ -35119,7 +35119,7 @@ break
 case 4:s=b.BR(0)
 break
 case 5:q=k.hr(b)
-s=A.bf(B.dN.bS(b.q3(q)),16)
+s=A.bg(B.dN.bS(b.q3(q)),16)
 break
 case 6:b.mM(8)
 r=b.a.getFloat64(b.b,B.ag===$.er())
@@ -41180,7 +41180,7 @@ else return k+"-"+p+"T"+o+":"+n+":"+m+"."+l},
 $icT:1}
 A.a3d.prototype={
 $1(a){if(a==null)return 0
-return A.bf(a,null)},
+return A.bg(a,null)},
 $S:169}
 A.a3e.prototype={
 $1(a){var s,r,q
@@ -41427,7 +41427,7 @@ $S:244}
 A.aiA.prototype={
 $2(a,b){var s
 if(b-a>4)this.a.$2("an IPv6 part can only contain a maximum of 4 hex digits",a)
-s=A.bf(B.e.ag(this.b,a,b),16)
+s=A.bg(B.e.ag(this.b,a,b),16)
 if(s<0||s>65535)this.a.$2("each part must be in the range of `0x0..0xFFFF`",a)
 return s},
 $S:170}
@@ -41555,7 +41555,7 @@ return s>r?B.e.ag(this.a,r,s-1):""},
 gJ1(a){var s=this.c
 return s>0?B.e.ag(this.a,s,this.d):""},
 gJS(a){var s,r=this
-if(r.garI())return A.bf(B.e.ag(r.a,r.d+1,r.e),null)
+if(r.garI())return A.bg(B.e.ag(r.a,r.d+1,r.e),null)
 s=r.b
 if(s===4&&B.e.dv(r.a,"http"))return 80
 if(s===5&&B.e.dv(r.a,"https"))return 443
@@ -45340,23 +45340,23 @@ aT(){var s=null,r="Acero completamente endurecido - G1",q="Acero completamente e
 return new A.GY(new A.ay(s,a),new A.ay(s,a),new A.ay(s,a),new A.ay(s,a),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),A.b(["Factor distribuci\xf3n de carga - Km","Ambos miembros montados separados","Un miembro montado separado","Ning\xfan miembro montado separado"],a1),A.b(["KL - pi\xf1on","General","Cr\xedtico","Otro"],a1),A.b(["KL - corona","General","Cr\xedtico","Otro"],a1),A.b(["Coeficiente el\xe1stico - Cp","Acero"],a1),A.b(["Coeficiente Cxc","Dientes coronados de forma adecuada","Dientes m\xe1s grandes sin coronar"],a1),A.b(["Resistencia a la Flexi\xf3n - St (Pi\xf1on)",r,q,p,o,n,m,l,k,j,i],a1),A.b(["Resistencia a la Flexi\xf3n - St (Corona)",r,q,p,o,n,m,l,k,j,i],a1),A.b([u.c,r,q,h,g,f,e,d,c,b],a1),A.b([u.r,r,q,h,g,f,e,d,c,b],a1),A.b(["Factor Qv","Qv=5","Qv=6","Qv=7","Qv=8","Qv=9","Qv=10","Qv=11"],a1),B.u)}}
 A.GY.prototype={
 L(a,b){var s=this,r=null,q="Ingrese un valor",p="Tablas y gr\xe1ficas",o="Ingrese un valor en HB",n="Ingrese su informaci\xf3n",m=t.D
-return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2003-B97 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.x,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.y,"N\xfamero de dientes del pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.z,"N\xfamero de dientes de la corona",q,r),A.v(r,20,r),new A.aw(s.Q,"Paso diametral ","Ingrese un valor mayor a 0.5",r),A.v(r,20,r),new A.aw(s.ax,"N\xfamero de ciclos del pi\xf1on",q,r)],m),B.r,B.G,B.x),s.d),A.v(r,20,r),s.kc(),A.v(r,20,r),A.t(u.gk,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,14,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.a5,r),A.v(r,20,r),A.d4(A.b([s.D8(),s.D6()],m),B.r,B.el,B.x),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.kd(),s.Df()],m),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([A.v(r,20,r),new A.aw(s.CW,"Ancho de cara- F","Ingrese un valor en in",r),A.v(r,20,r),new A.aw(s.w,"Potencia","Ingrese un valor en HP",r),A.v(r,20,r),new A.aw(s.as,"Temperatura de operaci\xf3n","Ingrese un valor en \xb0F",r),A.v(r,20,r),A.t(u.e3,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.at,"Confiabilidad","Ingrese un valor en decimales",r),A.v(r,20,r),new A.aw(s.ay,"Dureza del pi\xf1on",o,r),A.v(r,20,r),new A.aw(s.ch,"Dureza de la corona",o,r),A.v(r,20,r),new A.aw(s.cx,"Factor de sobrecarga - Ko",q,r),A.v(r,20,r),new A.aw(s.cy,"Factor geom\xe9trico - J (pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.db,"Factor geom\xe9trico - J (corona)",q,r),A.v(r,20,r),new A.aw(s.fr,"Factor de seguridad asumido",q,r)],m),B.r,B.G,B.x),s.e),s.Jl(),s.k8(),s.k9(),A.v(r,5,r),A.t("Ciclos del pi\xf1on: "+s.cM,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.Jh(),A.v(r,5,r),A.t("Ciclos de la corona: "+s.T,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.Ji(),A.v(r,20,r),s.D7(),A.v(r,20,r),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.D,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.aW,r,r,r,r,r,r)],m),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.fb,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.De()],m),B.r,B.a8,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.go,"Factor geom\xe9trico - I","Ingrese un valor ",r),A.v(r,20,r)],m),B.r,B.G,B.x),s.f),s.ka(),s.kb(),s.D9(),s.Da(),A.v(r,20,r),s.D5(),A.v(r,20,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.bx,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.an,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.k2,"Nombres y apellidos",n,r),A.v(r,20,r),new A.eC(s.k3,"Instituci\xf3n",n,r),A.v(r,20,r),new A.eC(s.k4,"Fecha","dd/mm/aa",r)],m),B.r,B.G,B.x),s.r),A.v(r,15,r),A.d4(A.b([A.bg(A.t("Generar PDF",r,r,r,r,r,r),s.ga9I(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.bg(A.t("Generar Word",r,r,r,r,r,r),s.ga9J(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],m),B.r,B.ah,B.x)],m),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],m))],t.xR),r),r),r),r)},
+return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2003-B97 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.x,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.y,"N\xfamero de dientes del pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.z,"N\xfamero de dientes de la corona",q,r),A.v(r,20,r),new A.aw(s.Q,"Paso diametral ","Ingrese un valor mayor a 0.5",r),A.v(r,20,r),new A.aw(s.ax,"N\xfamero de ciclos del pi\xf1on",q,r)],m),B.r,B.G,B.x),s.d),A.v(r,20,r),s.kc(),A.v(r,20,r),A.t(u.gk,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,14,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.a5,r),A.v(r,20,r),A.d4(A.b([s.D8(),s.D6()],m),B.r,B.el,B.x),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.kd(),s.Df()],m),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([A.v(r,20,r),new A.aw(s.CW,"Ancho de cara- F","Ingrese un valor en in",r),A.v(r,20,r),new A.aw(s.w,"Potencia","Ingrese un valor en HP",r),A.v(r,20,r),new A.aw(s.as,"Temperatura de operaci\xf3n","Ingrese un valor en \xb0F",r),A.v(r,20,r),A.t(u.e3,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.at,"Confiabilidad","Ingrese un valor en decimales",r),A.v(r,20,r),new A.aw(s.ay,"Dureza del pi\xf1on",o,r),A.v(r,20,r),new A.aw(s.ch,"Dureza de la corona",o,r),A.v(r,20,r),new A.aw(s.cx,"Factor de sobrecarga - Ko",q,r),A.v(r,20,r),new A.aw(s.cy,"Factor geom\xe9trico - J (pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.db,"Factor geom\xe9trico - J (corona)",q,r),A.v(r,20,r),new A.aw(s.fr,"Factor de seguridad asumido",q,r)],m),B.r,B.G,B.x),s.e),s.Jl(),s.k8(),s.k9(),A.v(r,5,r),A.t("Ciclos del pi\xf1on: "+s.cM,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.Jh(),A.v(r,5,r),A.t("Ciclos de la corona: "+s.T,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.Ji(),A.v(r,20,r),s.D7(),A.v(r,20,r),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.D,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.aW,r,r,r,r,r,r)],m),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.fb,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.De()],m),B.r,B.a8,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.go,"Factor geom\xe9trico - I","Ingrese un valor ",r),A.v(r,20,r)],m),B.r,B.G,B.x),s.f),s.ka(),s.kb(),s.D9(),s.Da(),A.v(r,20,r),s.D5(),A.v(r,20,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.bx,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.an,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.k2,"Nombres y apellidos",n,r),A.v(r,20,r),new A.eC(s.k3,"Instituci\xf3n",n,r),A.v(r,20,r),new A.eC(s.k4,"Fecha","dd/mm/aa",r)],m),B.r,B.G,B.x),s.r),A.v(r,15,r),A.d4(A.b([A.bf(A.t("Generar PDF",r,r,r,r,r,r),s.ga9I(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.bf(A.t("Generar Word",r,r,r,r,r,r),s.ga9J(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],m),B.r,B.ah,B.x)],m),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],m))],t.xR),r),r),r),r)},
 D8(){var s=null
-return A.bg(A.t("Verif. velocidad",s,s,s,s,s,s),new A.alH(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Verif. velocidad",s,s,s,s,s,s),new A.alH(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 D6(){var s=null
-return A.bg(A.t("Verif. ancho de cara",s,s,s,s,s,s),new A.alD(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Verif. ancho de cara",s,s,s,s,s,s),new A.alD(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 D7(){var s=null
-return A.bg(A.t("Ingresar datos",s,s,s,s,s,s),new A.alz(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar datos",s,s,s,s,s,s),new A.alz(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 D5(){var s=null
-return A.bg(A.t("Ingresar datos",s,s,s,s,s,s),new A.alv(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar datos",s,s,s,s,s,s),new A.alv(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 ke(){var s=null
-return A.bg(A.t("Ko",s,s,s,s,s,s),new A.amC(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ko",s,s,s,s,s,s),new A.amC(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 Df(){var s=null
-return A.bg(A.t("KL",s,s,s,s,s,s),new A.amy(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("KL",s,s,s,s,s,s),new A.amy(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 kd(){var s=null
-return A.bg(A.t("J",s,s,s,s,s,s),new A.amu(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("J",s,s,s,s,s,s),new A.amu(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 De(){var s=null
-return A.bg(A.t("I",s,s,s,s,s,s),new A.amq(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("I",s,s,s,s,s,s),new A.amq(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 k7(){var s=this.c
 s.toString
 A.ia(!0,new A.alr(),s,t.z)},
@@ -47554,23 +47554,23 @@ aT(){var s=null,r="Acero completamente endurecido - G1",q="Acero completamente e
 return new A.GX(new A.ay(s,a),new A.ay(s,a),new A.ay(s,a),new A.ay(s,a),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),new A.aa(B.n,a0),A.b(["Factor distribuci\xf3n de carga - Km","Ambos miembros montados separados","Un miembro montado separado","Ning\xfan miembro montado separado"],a1),A.b(["KL - pi\xf1on","General","Cr\xedtico","Otro"],a1),A.b(["KL - corona","General","Cr\xedtico","Otro"],a1),A.b(["Coeficiente el\xe1stico - Cp","Acero"],a1),A.b(["Coeficiente Cxc","Dientes coronados de forma adecuada","Dientes m\xe1s grandes sin coronar"],a1),A.b(["Resistencia a la Flexi\xf3n - St (Pi\xf1on)",r,q,p,o,n,m,l,k,j,i],a1),A.b(["Resistencia a la Flexi\xf3n - St (Corona)",r,q,p,o,n,m,l,k,j,i],a1),A.b([u.c,r,q,h,g,f,e,d,c,b],a1),A.b([u.r,r,q,h,g,f,e,d,c,b],a1),A.b(["Factor Qv","Qv=5","Qv=6","Qv=7","Qv=8","Qv=9","Qv=10","Qv=11"],a1),B.u)}}
 A.GX.prototype={
 L(a,b){var s=this,r=null,q="Ingrese un valor",p="Tablas y gr\xe1ficas",o="Ingrese un valor en HB",n="Ingrese su informaci\xf3n",m=t.D
-return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2003-B97 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.x,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.y,"N\xfamero de dientes del pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.z,"N\xfamero de dientes de la corona",q,r),A.v(r,20,r),new A.aw(s.Q,"M\xf3dulo ","Ingrese un valor mayor en mm",r),A.v(r,20,r),new A.aw(s.ax,"N\xfamero de ciclos del pi\xf1on",q,r)],m),B.r,B.G,B.x),s.d),A.v(r,20,r),s.kc(),A.v(r,20,r),A.t(u.gk,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,14,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.a5,r),A.v(r,20,r),A.d4(A.b([s.D8(),s.D6()],m),B.r,B.el,B.x),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.kd(),s.Df()],m),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.CW,"Ancho de cara- F","Ingrese un valor en mm",r),A.v(r,20,r),new A.aw(s.w,"Potencia","Ingrese un valor en Kw",r),A.v(r,20,r),new A.aw(s.as,"Temperatura de operaci\xf3n","Ingrese un valor en \xb0F",r),A.v(r,20,r),A.t(u.e3,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.at,"Confiabilidad","Ingrese un valor en decimales",r),A.v(r,20,r),new A.aw(s.ay,"Dureza del pi\xf1on",o,r),A.v(r,20,r),new A.aw(s.ch,"Dureza de la corona",o,r),A.v(r,20,r),new A.aw(s.cx,"Factor de sobrecarga - Ko",q,r),A.v(r,20,r),new A.aw(s.cy,"Factor geom\xe9trico - J (pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.db,"Factor geom\xe9trico - J (corona)",q,r),A.v(r,20,r),new A.aw(s.fr,"Factor de seguridad asumido",q,r)],m),B.r,B.G,B.x),s.e),A.v(r,20,r),s.k8(),s.k9(),s.Jl(),A.v(r,5,r),A.t("Ciclos del pi\xf1on: "+s.b7,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.Jh(),A.v(r,5,r),A.t("Ciclos de la corona: "+s.ae,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.Ji(),s.D7(),A.v(r,20,r),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.a_,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.au,r,r,r,r,r,r)],m),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.fb,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.De()],m),B.r,B.a8,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.go,"Factor geom\xe9trico - I","Ingrese un valor ",r)],m),B.r,B.G,B.x),s.f),A.v(r,20,r),s.ka(),s.kb(),s.D9(),s.Da(),s.D5(),A.v(r,20,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.bb,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.bc,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.k2,"Nombres y apellidos",n,r),A.v(r,20,r),new A.eC(s.k3,"Instituci\xf3n",n,r),A.v(r,20,r),new A.eC(s.k4,"Fecha","dd/mm/aa",r)],m),B.r,B.G,B.x),s.r),A.v(r,15,r),A.d4(A.b([A.bg(A.t("Generar PDF",r,r,r,r,r,r),s.ga9K(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.bg(A.t("Generar Word",r,r,r,r,r,r),s.ga9L(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],m),B.r,B.ah,B.x)],m),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],m))],t.xR),r),r),r),r)},
+return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2003-B97 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.x,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.y,"N\xfamero de dientes del pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.z,"N\xfamero de dientes de la corona",q,r),A.v(r,20,r),new A.aw(s.Q,"M\xf3dulo ","Ingrese un valor mayor en mm",r),A.v(r,20,r),new A.aw(s.ax,"N\xfamero de ciclos del pi\xf1on",q,r)],m),B.r,B.G,B.x),s.d),A.v(r,20,r),s.kc(),A.v(r,20,r),A.t(u.gk,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,14,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.a5,r),A.v(r,20,r),A.d4(A.b([s.D8(),s.D6()],m),B.r,B.el,B.x),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.kd(),s.Df()],m),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.CW,"Ancho de cara- F","Ingrese un valor en mm",r),A.v(r,20,r),new A.aw(s.w,"Potencia","Ingrese un valor en Kw",r),A.v(r,20,r),new A.aw(s.as,"Temperatura de operaci\xf3n","Ingrese un valor en \xb0F",r),A.v(r,20,r),A.t(u.e3,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.at,"Confiabilidad","Ingrese un valor en decimales",r),A.v(r,20,r),new A.aw(s.ay,"Dureza del pi\xf1on",o,r),A.v(r,20,r),new A.aw(s.ch,"Dureza de la corona",o,r),A.v(r,20,r),new A.aw(s.cx,"Factor de sobrecarga - Ko",q,r),A.v(r,20,r),new A.aw(s.cy,"Factor geom\xe9trico - J (pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.db,"Factor geom\xe9trico - J (corona)",q,r),A.v(r,20,r),new A.aw(s.fr,"Factor de seguridad asumido",q,r)],m),B.r,B.G,B.x),s.e),A.v(r,20,r),s.k8(),s.k9(),s.Jl(),A.v(r,5,r),A.t("Ciclos del pi\xf1on: "+s.b7,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.Jh(),A.v(r,5,r),A.t("Ciclos de la corona: "+s.ae,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.Ji(),s.D7(),A.v(r,20,r),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.a_,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.au,r,r,r,r,r,r)],m),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.fb,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.De()],m),B.r,B.a8,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.go,"Factor geom\xe9trico - I","Ingrese un valor ",r)],m),B.r,B.G,B.x),s.f),A.v(r,20,r),s.ka(),s.kb(),s.D9(),s.Da(),s.D5(),A.v(r,20,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.bb,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.bc,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.k2,"Nombres y apellidos",n,r),A.v(r,20,r),new A.eC(s.k3,"Instituci\xf3n",n,r),A.v(r,20,r),new A.eC(s.k4,"Fecha","dd/mm/aa",r)],m),B.r,B.G,B.x),s.r),A.v(r,15,r),A.d4(A.b([A.bf(A.t("Generar PDF",r,r,r,r,r,r),s.ga9K(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.bf(A.t("Generar Word",r,r,r,r,r,r),s.ga9L(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],m),B.r,B.ah,B.x)],m),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],m))],t.xR),r),r),r),r)},
 Df(){var s=null
-return A.bg(A.t("KL",s,s,s,s,s,s),new A.amx(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("KL",s,s,s,s,s,s),new A.amx(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 D8(){var s=null
-return A.bg(A.t("Verif. velocidad",s,s,s,s,s,s),new A.alG(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Verif. velocidad",s,s,s,s,s,s),new A.alG(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 D6(){var s=null
-return A.bg(A.t("Verif. ancho de cara",s,s,s,s,s,s),new A.alC(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Verif. ancho de cara",s,s,s,s,s,s),new A.alC(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 D7(){var s=null
-return A.bg(A.t("Ingresar datos",s,s,s,s,s,s),new A.aly(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar datos",s,s,s,s,s,s),new A.aly(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 D5(){var s=null
-return A.bg(A.t("Ingresar datos",s,s,s,s,s,s),new A.alu(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar datos",s,s,s,s,s,s),new A.alu(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 ke(){var s=null
-return A.bg(A.t("Ko",s,s,s,s,s,s),new A.amB(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ko",s,s,s,s,s,s),new A.amB(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 kd(){var s=null
-return A.bg(A.t("J",s,s,s,s,s,s),new A.amt(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("J",s,s,s,s,s,s),new A.amt(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 De(){var s=null
-return A.bg(A.t("I",s,s,s,s,s,s),new A.amp(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("I",s,s,s,s,s,s),new A.amp(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 k7(){var s=this.c
 s.toString
 A.ia(!0,new A.alq(),s,t.z)},
@@ -49819,7 +49819,7 @@ aT(){var s=null,r="Acero completamente endurecido - G1",q="Acero completamente e
 return new A.H_(new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.ay(s,b1),new A.ay(s,b1),new A.ay(s,b1),new A.ay(s,b1),A.b(["Resistencia a la Flexi\xf3n - St (Pi\xf1on)",r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c],b2),A.b(["Resistencia a la Flexi\xf3n - St (Corona)",r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c],b2),A.b(["Efecto Din\xe1mico - Kv","Perfil moldeado","Perfil cortado o fresado","Perfil generado con fresa madre","Perfil cepillado o esmerilado"],b2),A.b(["Dientes con o sin coronar - Cmc","Dientes sin coronar","Dientes coronados"],b2),A.b(["Distancia - Cpm","Pi\xf1on montado con: Sl/S < 0.175","Pi\xf1on montado con: Sl/S >= 0.175"],b2),A.b(["Condiciones - Cma","Engranajes abiertos","Unidades comerciales, cerradas","Unidades de presici\xf3n, cerradas","Unidades de presici\xf3n extrema, cerradas"],b2),A.b(["Condiciones - Ce","Engrajes ajustados o lapeados","Otras condiciones"],b2),A.b(["Confiabilidad","Confiabilidad: 0.9999","Confiabilidad: 0.999","Confiabilidad: 0.99","Confiabilidad: 0.90","Confiabilidad: 0.50"],b2),A.b(["Factor de ciclos (Pi\xf1on)",b,a,a0,a1,a2,a3,a4],b2),A.b(["Factor de ciclos (Corona)",b,a,a0,a1,a2,a3,a4],b2),A.b(["Factor Geom\xe9trico I","Engranes externos","Engranes internos"],b2),A.b([u.c,r,q,a5,a6],b2),A.b([u.r,r,q,a5,a6],b2),A.b([u.W,a7,a8,a9],b2),A.b([u.t,a7,a8,a9],b2),A.b(["Factor de relaci\xf3n de la dureza - CH","Aceros Completamente Endurecidos","Aceros endurecidos superficialmente"],b2),A.b(["Factor Qv","Qv=5","Qv=6","Qv=7","Qv=8","Qv=9","Qv=10","Qv=11"],b2),B.u)}}
 A.H_.prototype={
 L(a,b){var s=this,r=null,q="Ingrese un valor",p="Tablas y gr\xe1ficas",o="Ciclos del pi\xf1on: ",n="Ciclos de la corona: ",m="Ingrese su informaci\xf3n",l=t.D
-return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan Lewis",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,10,r),A.d4(A.b([s.om()],l),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.d,"N\xfamero de dientes pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.e,"Paso diametral normal","Ingrese un valor d/in",r),A.v(r,20,r),new A.aw(s.f,"Angulo de h\xe9lice","Ingrese un valor entre 15\xb0 a 45\xb0",r),A.v(r,20,r),new A.aw(s.r,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.w,"Potencia del motor","Ingrese un valor en Hp",r),A.v(r,20,r),new A.aw(s.x,"Dureza (Pi\xf1on)","Ingrese un valor en Hb",r),A.v(r,20,r),new A.aw(s.Q,u._,q,r),A.v(r,20,r),new A.aw(s.z,"Factor de Forma Lewis ",q,r),A.v(r,20,r),new A.aw(s.db,"Relaci\xf3n de Transmici\xf3n - mg",q,r),A.v(r,20,r),new A.aw(s.cx,"Ciclos del pi\xf1on - N",q,r)],l),B.r,B.G,B.x),s.go),A.v(r,10,r),s.k8(),s.o7(),s.oY(),A.v(r,10,r),A.t("Ancho Cara: "+s.R8+" in",r,r,r,r,r,r)],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2001-D04 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.oi(),s.oh()],l),B.r,B.ah,B.x),A.v(r,15,r),A.d4(A.b([s.kd(),s.oj(),s.Dg()],l),B.r,B.ah,B.x),A.v(r,20,r),A.t("Velocidad: "+s.p2+" fpm",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,5,r),A.t("N\xfamero de dientes de la corona: "+s.to,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.at,"Ancho de cara normalizado","Ingrese un valor entre "+s.RG+" y "+s.rx+" in",r),A.v(r,20,r),new A.aw(s.ax,"Factor de sobrecarga - Ko ",q,r),A.v(r,20,r),new A.aw(s.ay,"Factor Geom\xe9trico - J (Pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.ch,"Factor Geom\xe9trico - J (Corona)",q,r),A.v(r,20,r),new A.aw(s.y,"Dureza (Corona)",q,r),A.v(r,20,r),new A.aw(s.CW,"Factor de Espesor de Aro - Kb","Recomendado 1",r),A.v(r,20,r),A.t(u.p,r,r,r,r,r,r),A.v(r,20,r),new A.aw(s.as,"Confiablidad","Ingrese un valor en decimales",r)],l),B.r,B.G,B.x),s.id),A.v(r,10,r),s.kc(),s.pd(),s.pe(),s.o8(),s.of(),A.v(r,5,r),A.t(o+s.az,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oa(),A.v(r,5,r),A.t(n+s.ry,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.ob(),s.k9(),A.v(r,5,r),s.o6(),A.v(r,15,r),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.aU,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.au,r,r,r,r,r,r)],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.eA,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.og(),s.ol()],l),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.cy,"Coeficiente el\xe1stico - Cp","Ingrese un valor en psi",r),A.v(r,20,r),A.t(u.i,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.dx,"Acado Sup. pi\xf1on - Fp (Presionar)","En caso de no usar, ingrese 1",r)],l),B.r,B.G,B.x),s.k1),A.v(r,20,r),s.oc(),s.ka(),s.kb(),A.v(r,5,r),A.t(o+s.az,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oe(),A.v(r,5,r),A.t(n+s.ry,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.od(),s.o9(),s.o5(),A.v(r,15,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.bx,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.bb,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.fr,"Nombres y apellidos",m,r),A.v(r,20,r),new A.eC(s.fx,"Instituci\xf3n",m,r),A.v(r,20,r),new A.eC(s.fy,"Fecha","dd/mm/aa",r)],l),B.r,B.G,B.x),s.k2),A.v(r,15,r),A.bg(A.t("Generar PDF",r,r,r,r,r,r),s.gafL(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.v(r,15,r),A.bg(A.t("Generar Word",r,r,r,r,r,r),s.gafM(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],l))],t.xR),r),r),r),r)},
+return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan Lewis",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,10,r),A.d4(A.b([s.om()],l),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.d,"N\xfamero de dientes pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.e,"Paso diametral normal","Ingrese un valor d/in",r),A.v(r,20,r),new A.aw(s.f,"Angulo de h\xe9lice","Ingrese un valor entre 15\xb0 a 45\xb0",r),A.v(r,20,r),new A.aw(s.r,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.w,"Potencia del motor","Ingrese un valor en Hp",r),A.v(r,20,r),new A.aw(s.x,"Dureza (Pi\xf1on)","Ingrese un valor en Hb",r),A.v(r,20,r),new A.aw(s.Q,u._,q,r),A.v(r,20,r),new A.aw(s.z,"Factor de Forma Lewis ",q,r),A.v(r,20,r),new A.aw(s.db,"Relaci\xf3n de Transmici\xf3n - mg",q,r),A.v(r,20,r),new A.aw(s.cx,"Ciclos del pi\xf1on - N",q,r)],l),B.r,B.G,B.x),s.go),A.v(r,10,r),s.k8(),s.o7(),s.oY(),A.v(r,10,r),A.t("Ancho Cara: "+s.R8+" in",r,r,r,r,r,r)],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2001-D04 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.oi(),s.oh()],l),B.r,B.ah,B.x),A.v(r,15,r),A.d4(A.b([s.kd(),s.oj(),s.Dg()],l),B.r,B.ah,B.x),A.v(r,20,r),A.t("Velocidad: "+s.p2+" fpm",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,5,r),A.t("N\xfamero de dientes de la corona: "+s.to,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.at,"Ancho de cara normalizado","Ingrese un valor entre "+s.RG+" y "+s.rx+" in",r),A.v(r,20,r),new A.aw(s.ax,"Factor de sobrecarga - Ko ",q,r),A.v(r,20,r),new A.aw(s.ay,"Factor Geom\xe9trico - J (Pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.ch,"Factor Geom\xe9trico - J (Corona)",q,r),A.v(r,20,r),new A.aw(s.y,"Dureza (Corona)",q,r),A.v(r,20,r),new A.aw(s.CW,"Factor de Espesor de Aro - Kb","Recomendado 1",r),A.v(r,20,r),A.t(u.p,r,r,r,r,r,r),A.v(r,20,r),new A.aw(s.as,"Confiablidad","Ingrese un valor en decimales",r)],l),B.r,B.G,B.x),s.id),A.v(r,10,r),s.kc(),s.pd(),s.pe(),s.o8(),s.of(),A.v(r,5,r),A.t(o+s.az,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oa(),A.v(r,5,r),A.t(n+s.ry,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.ob(),s.k9(),A.v(r,5,r),s.o6(),A.v(r,15,r),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.aU,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.au,r,r,r,r,r,r)],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.eA,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.og(),s.ol()],l),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.cy,"Coeficiente el\xe1stico - Cp","Ingrese un valor en psi",r),A.v(r,20,r),A.t(u.i,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.dx,"Acado Sup. pi\xf1on - Fp (Presionar)","En caso de no usar, ingrese 1",r)],l),B.r,B.G,B.x),s.k1),A.v(r,20,r),s.oc(),s.ka(),s.kb(),A.v(r,5,r),A.t(o+s.az,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oe(),A.v(r,5,r),A.t(n+s.ry,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.od(),s.o9(),s.o5(),A.v(r,15,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.bx,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.bb,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.fr,"Nombres y apellidos",m,r),A.v(r,20,r),new A.eC(s.fx,"Instituci\xf3n",m,r),A.v(r,20,r),new A.eC(s.fy,"Fecha","dd/mm/aa",r)],l),B.r,B.G,B.x),s.k2),A.v(r,15,r),A.bf(A.t("Generar PDF",r,r,r,r,r,r),s.gafL(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.v(r,15,r),A.bf(A.t("Generar Word",r,r,r,r,r,r),s.gafM(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],l))],t.xR),r),r),r),r)},
 k7(){var s=this.c
 s.toString
 A.ia(!0,new A.an5(this),s,t.z)},
@@ -49827,27 +49827,27 @@ k6(){var s=this.c
 s.toString
 A.ia(!0,new A.an3(this),s,t.z)},
 om(){var s=null
-return A.bg(A.t("Fact. forma Lewis",s,s,s,s,s,s),new A.ap_(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Fact. forma Lewis",s,s,s,s,s,s),new A.ap_(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oY(){var s=null
-return A.bg(A.t("Verif. Ancho de Cara",s,s,s,s,s,s),new A.ap3(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Verif. Ancho de Cara",s,s,s,s,s,s),new A.ap3(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 ke(){var s=null
-return A.bg(A.t("Ko",s,s,s,s,s,s),new A.aoG(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ko",s,s,s,s,s,s),new A.aoG(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oi(){var s=null
-return A.bg(A.t("Qv",s,s,s,s,s,s),new A.aoK(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Qv",s,s,s,s,s,s),new A.aoK(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oh(){var s=null
-return A.bg(A.t("Cpm",s,s,s,s,s,s),new A.aoy(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Cpm",s,s,s,s,s,s),new A.aoy(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 kd(){var s=null
-return A.bg(A.t("J",s,s,s,s,s,s),new A.aoC(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("J",s,s,s,s,s,s),new A.aoC(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 Dg(){var s=null
-return A.bg(A.t("Fm",s,s,s,s,s,s),new A.aoW(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Fm",s,s,s,s,s,s),new A.aoW(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oj(){var s=null
-return A.bg(A.t("YN",s,s,s,s,s,s),new A.aoO(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("YN",s,s,s,s,s,s),new A.aoO(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 o6(){var s=null
-return A.bg(A.t("Ingresar Datos",s,s,s,s,s,s),new A.an1(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar Datos",s,s,s,s,s,s),new A.an1(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 o5(){var s=null
-return A.bg(A.t("Ingresar Datos",s,s,s,s,s,s),new A.amY(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar Datos",s,s,s,s,s,s),new A.amY(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 og(){var s=null
-return A.bg(A.t("Cp",s,s,s,s,s,s),new A.aou(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Cp",s,s,s,s,s,s),new A.aou(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 kc(){var s=this.bt,r=A.R(s).n("E<1,aN<r>>")
 return A.aX(!0,A.W(new A.E(s,new A.aop(),r),!0,r.n("ae.E")),new A.aoq(this),this.hJ,t.N)},
 k8(){var s=this.bu,r=A.R(s).n("E<1,aN<r>>")
@@ -49881,7 +49881,7 @@ return A.aX(!0,A.W(new A.E(s,new A.ao7(),r),!0,r.n("ae.E")),new A.ao8(this),this
 o9(){var s=this.cY,r=A.R(s).n("E<1,aN<r>>")
 return A.aX(!0,A.W(new A.E(s,new A.any(),r),!0,r.n("ae.E")),new A.anz(this),this.dS,t.N)},
 ol(){var s=null
-return A.bg(A.t("ZN",s,s,s,s,s,s),new A.aoS(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("ZN",s,s,s,s,s,s),new A.aoS(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 ei(){var s=0,r=A.ar(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5
 var $async$ei=A.as(function(e6,e7){if(e6===1)return A.ao(e7,r)
 while(true)switch(s){case 0:q.E=q.fr.a.a
@@ -50221,7 +50221,7 @@ i=c5.gk(c5).i(1)
 i.r=b9
 i.j(b9)
 i=c5.gk(c5).i(2)
-a3=B.a.p(A.c(j.a.a)*Math.cos(A.bf(k.a.a,null)*0.017453292519943295),3)
+a3=B.a.p(A.c(j.a.a)*Math.cos(A.bg(k.a.a,null)*0.017453292519943295),3)
 i.r=a3
 i.j(a3)
 A.a(c5.a,"_helper").w=!0
@@ -50327,7 +50327,7 @@ i=c6.gk(c6).i(1)
 i.r=b9
 i.j(b9)
 i=c6.gk(c6).i(2)
-a3=B.a.p(A.c(j.a.a)*Math.cos(A.bf(k.a.a,null)*0.017453292519943295),3)
+a3=B.a.p(A.c(j.a.a)*Math.cos(A.bg(k.a.a,null)*0.017453292519943295),3)
 i.r=a3
 i.j(a3)
 A.a(c6.a,"_helper").w=!0
@@ -50619,7 +50619,7 @@ c8=c9.gk(c9).i(1)
 c8.r=b9
 c8.j(b9)
 c8=c9.gk(c9).i(2)
-k=B.a.p(A.c(j.a.a)*Math.cos(A.bf(k.a.a,null)*0.017453292519943295),3)
+k=B.a.p(A.c(j.a.a)*Math.cos(A.bg(k.a.a,null)*0.017453292519943295),3)
 c8.r=k
 c8.j(k)
 A.a(c9.a,"_helper").w=!0
@@ -51512,7 +51512,7 @@ j=A.o("nlg",B.a.eG(A.c(q.ry)))
 l.l(0,j.a,j)
 j=A.o("dp",B.a.p(A.c(q.k3),3))
 l.l(0,j.a,j)
-m=A.o("pt",B.a.p(A.c(k.a.a)*Math.cos(A.bf(m.a.a,null)*0.017453292519943295),3))
+m=A.o("pt",B.a.p(A.c(k.a.a)*Math.cos(A.bg(m.a.a,null)*0.017453292519943295),3))
 l.l(0,m.a,m)
 m=A.o("v",B.a.p(A.c(q.p1),3))
 l.l(0,m.a,m)
@@ -51766,7 +51766,7 @@ n.aB=B.a.h(Math.pow((q+Math.pow(A.c(n.p1),0.5))/q,r))
 l=n.ax
 j=n.f
 p=n.CW
-n.D=B.a.h(A.c(n.p4)*A.c(l.a.a)*A.c(n.aB)*A.c(n.t)*(A.c(k.a.a)*Math.cos(A.bf(j.a.a,null)*0.017453292519943295)/A.c(m.a.a))*(A.c(n.a_)*A.c(p.a.a)/A.c(n.ay.a.a)))
+n.D=B.a.h(A.c(n.p4)*A.c(l.a.a)*A.c(n.aB)*A.c(n.t)*(A.c(k.a.a)*Math.cos(A.bg(j.a.a,null)*0.017453292519943295)/A.c(m.a.a))*(A.c(n.a_)*A.c(p.a.a)/A.c(n.ay.a.a)))
 o=n.as
 if(0.5<=A.c(o.a.a)&&A.c(o.a.a)<0.9)n.ad=B.a.h(0.375*A.c(o.a.a)+0.5125)
 else if(0.9<=A.c(o.a.a)&&A.c(o.a.a)<0.99)n.ad=B.a.h(1.6667*A.c(o.a.a)-0.65)
@@ -51784,7 +51784,7 @@ A.f("Esfuerzo "+n.D)
 A.f("FS p "+n.aU)
 A.f("YNp "+n.ak)
 A.f("ST pi\xf1on "+n.k4)
-n.aW=B.a.h(A.c(n.p4)*A.c(l.a.a)*A.c(n.aB)*A.c(n.t)*(A.c(k.a.a)*Math.cos(A.bf(j.a.a,null)*0.017453292519943295)/A.c(m.a.a))*(A.c(n.a_)*A.c(p.a.a)/A.c(n.ch.a.a)))
+n.aW=B.a.h(A.c(n.p4)*A.c(l.a.a)*A.c(n.aB)*A.c(n.t)*(A.c(k.a.a)*Math.cos(A.bg(j.a.a,null)*0.017453292519943295)/A.c(m.a.a))*(A.c(n.a_)*A.c(p.a.a)/A.c(n.ch.a.a)))
 n.au=B.a.p(A.c(n.ok)*A.c(n.b9)/(A.c(n.ad)*A.c(n.aW)),3)
 A.f("St "+n.ok)
 A.f("Yng "+n.b9)
@@ -51946,7 +51946,7 @@ $S:3}
 A.anb.prototype={
 $1(a){var s,r,q=this.a
 q.P(new A.an7(q,a))
-s=B.a.h(A.bf(q.d.a.a,null)/A.c(q.e.a.a))
+s=B.a.h(A.bg(q.d.a.a,null)/A.c(q.e.a.a))
 q.k3=s
 r=3.141592653589793*A.c(s)*A.c(q.r.a.a)/12
 q.p1=B.a.h(r)
@@ -52392,7 +52392,7 @@ aT(){var s=null,r="Acero completamente endurecido - G1",q="Acero completamente e
 return new A.GZ(new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.aa(B.n,b0),new A.ay(s,b1),new A.ay(s,b1),new A.ay(s,b1),new A.ay(s,b1),A.b(["Resistencia a la Flexi\xf3n - St (Pi\xf1on)",r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c],b2),A.b(["Resistencia a la Flexi\xf3n - St (Corona)",r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c],b2),A.b(["Efecto Din\xe1mico - Kv","Perfil moldeado","Perfil cortado o fresado","Perfil generado con fresa madre","Perfil cepillado o esmerilado"],b2),A.b(["Dientes con o sin coronar - Cmc","Dientes sin coronar","Dientes coronados"],b2),A.b(["Distancia - Cpm","Pi\xf1on montado con: Sl/S < 0.175","Pi\xf1on montado con: Sl/S >= 0.175"],b2),A.b(["Condiciones - Cma","Engranajes abiertos","Unidades comerciales, cerradas","Unidades de presici\xf3n, cerradas","Unidades de presici\xf3n extrema, cerradas"],b2),A.b(["Condiciones - Ce","Engrajes ajustados o lapeados","Otras condiciones"],b2),A.b(["Confiabilidad","Confiabilidad: 0.9999","Confiabilidad: 0.999","Confiabilidad: 0.99","Confiabilidad: 0.90","Confiabilidad: 0.50"],b2),A.b(["Factor de ciclos (Pi\xf1on)",b,a,a0,a1,a2,a3,a4],b2),A.b(["Factor de ciclos (Corona)",b,a,a0,a1,a2,a3,a4],b2),A.b(["Factor Geom\xe9trico I","Engranes externos","Engranes internos"],b2),A.b([u.c,r,q,a5,a6],b2),A.b([u.r,r,q,a5,a6],b2),A.b([u.W,a7,a8,a9],b2),A.b([u.t,a7,a8,a9],b2),A.b(["Factor de relaci\xf3n de la dureza - CH","Aceros Completamente Endurecidos","Aceros endurecidos superficialmente"],b2),A.b(["Factor Qv","Qv=5","Qv=6","Qv=7","Qv=8","Qv=9","Qv=10","Qv=11"],b2),B.u)}}
 A.GZ.prototype={
 L(a,b){var s=this,r=null,q="Ingrese un valor",p="Tablas y gr\xe1ficas",o="Ciclos del pi\xf1on: ",n="Ciclos de la corona: ",m="Ingrese su informaci\xf3n",l=t.D
-return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan Lewis",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,10,r),A.d4(A.b([s.om()],l),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.d,"N\xfamero de dientes pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.e,"M\xf3dulo m\xe9trico normal","Ingrese un valor en mm",r),A.v(r,20,r),new A.aw(s.f,"Angulo de h\xe9lice","Ingrese un valor entre 15\xb0 a 45\xb0",r),A.v(r,20,r),new A.aw(s.r,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.w,"Potencia del motor","Ingrese un valor en Kw",r),A.v(r,20,r),new A.aw(s.x,"Dureza (Pi\xf1on)","Ingrese un valor en Hb",r),A.v(r,20,r),new A.aw(s.Q,u._,q,r),A.v(r,20,r),new A.aw(s.z,"Factor de Forma Lewis ",q,r),A.v(r,20,r),new A.aw(s.db,"Relaci\xf3n de Transmici\xf3n - mg",q,r),A.v(r,20,r),new A.aw(s.cx,"Ciclos del pi\xf1on - N",q,r)],l),B.r,B.G,B.x),s.go),A.v(r,10,r),s.k8(),s.o7(),s.oY(),A.v(r,10,r),A.t("Ancho Cara: "+s.R8+" mm",r,r,r,r,r,r)],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2101-D04 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.oi(),s.oh()],l),B.r,B.ah,B.x),A.v(r,15,r),A.d4(A.b([s.kd(),s.oj(),s.Dg()],l),B.r,B.ah,B.x),A.v(r,20,r),A.t("Velocidad: "+s.p2+" m/s",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,5,r),A.t("N\xfamero de dientes de la corona: "+s.to,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.at,"Ancho de cara normalizado","Ingrese un valor entre "+s.RG+" y "+s.rx+" mm",r),A.v(r,20,r),new A.aw(s.ax,"Factor de sobrecarga - Ko ",q,r),A.v(r,20,r),new A.aw(s.ay,"Factor Geom\xe9trico - J (Pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.ch,"Factor Geom\xe9trico - J (Corona)",q,r),A.v(r,20,r),new A.aw(s.y,"Dureza (Corona)",q,r),A.v(r,20,r),new A.aw(s.CW,"Factor de Espesor de Aro - Kb","Recomendado 1",r),A.v(r,20,r),A.t(u.p,r,r,r,r,r,r),A.v(r,20,r),new A.aw(s.as,"Confiablidad","Ingrese un valor en decimales",r)],l),B.r,B.G,B.x),s.id),A.v(r,20,r),s.kc(),s.pd(),s.pe(),s.o8(),s.of(),A.v(r,5,r),A.t(o+s.az,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oa(),A.v(r,5,r),A.t(n+s.ry,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.ob(),s.k9(),A.v(r,5,r),s.o6(),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.aU,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.au,r,r,r,r,r,r)],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.aE,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.og(),s.ol()],l),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.cy,"Coeficiente el\xe1stico - Cp","Ingrese un valor en MPa",r),A.v(r,20,r),A.t(u.i,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.dx,"Acado Sup. pi\xf1on - Fp (Presionar)","En caso de no usar, ingrese 1",r)],l),B.r,B.G,B.x),s.k1),A.v(r,20,r),s.oc(),s.ka(),s.kb(),A.v(r,5,r),A.t(o+s.az,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oe(),A.v(r,5,r),A.t(n+s.ry,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.od(),s.o9(),s.o5(),A.v(r,15,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.bx,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.bb,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.fr,"Nombres y apellidos",m,r),A.v(r,20,r),new A.eC(s.fx,"Instituci\xf3n",m,r),A.v(r,20,r),new A.eC(s.fy,"Fecha","dd/mm/aa",r)],l),B.r,B.G,B.x),s.k2),A.v(r,15,r),A.bg(A.t("Generar PDF",r,r,r,r,r,r),s.gafN(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.v(r,15,r),A.bg(A.t("Generar Word",r,r,r,r,r,r),s.gafO(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],l))],t.xR),r),r),r),r)},
+return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan Lewis",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,10,r),A.d4(A.b([s.om()],l),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.d,"N\xfamero de dientes pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.e,"M\xf3dulo m\xe9trico normal","Ingrese un valor en mm",r),A.v(r,20,r),new A.aw(s.f,"Angulo de h\xe9lice","Ingrese un valor entre 15\xb0 a 45\xb0",r),A.v(r,20,r),new A.aw(s.r,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.w,"Potencia del motor","Ingrese un valor en Kw",r),A.v(r,20,r),new A.aw(s.x,"Dureza (Pi\xf1on)","Ingrese un valor en Hb",r),A.v(r,20,r),new A.aw(s.Q,u._,q,r),A.v(r,20,r),new A.aw(s.z,"Factor de Forma Lewis ",q,r),A.v(r,20,r),new A.aw(s.db,"Relaci\xf3n de Transmici\xf3n - mg",q,r),A.v(r,20,r),new A.aw(s.cx,"Ciclos del pi\xf1on - N",q,r)],l),B.r,B.G,B.x),s.go),A.v(r,10,r),s.k8(),s.o7(),s.oY(),A.v(r,10,r),A.t("Ancho Cara: "+s.R8+" mm",r,r,r,r,r,r)],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2101-D04 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.oi(),s.oh()],l),B.r,B.ah,B.x),A.v(r,15,r),A.d4(A.b([s.kd(),s.oj(),s.Dg()],l),B.r,B.ah,B.x),A.v(r,20,r),A.t("Velocidad: "+s.p2+" m/s",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,5,r),A.t("N\xfamero de dientes de la corona: "+s.to,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.at,"Ancho de cara normalizado","Ingrese un valor entre "+s.RG+" y "+s.rx+" mm",r),A.v(r,20,r),new A.aw(s.ax,"Factor de sobrecarga - Ko ",q,r),A.v(r,20,r),new A.aw(s.ay,"Factor Geom\xe9trico - J (Pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.ch,"Factor Geom\xe9trico - J (Corona)",q,r),A.v(r,20,r),new A.aw(s.y,"Dureza (Corona)",q,r),A.v(r,20,r),new A.aw(s.CW,"Factor de Espesor de Aro - Kb","Recomendado 1",r),A.v(r,20,r),A.t(u.p,r,r,r,r,r,r),A.v(r,20,r),new A.aw(s.as,"Confiablidad","Ingrese un valor en decimales",r)],l),B.r,B.G,B.x),s.id),A.v(r,20,r),s.kc(),s.pd(),s.pe(),s.o8(),s.of(),A.v(r,5,r),A.t(o+s.az,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oa(),A.v(r,5,r),A.t(n+s.ry,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.ob(),s.k9(),A.v(r,5,r),s.o6(),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.aU,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.au,r,r,r,r,r,r)],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.aE,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(p,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.og(),s.ol()],l),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.cy,"Coeficiente el\xe1stico - Cp","Ingrese un valor en MPa",r),A.v(r,20,r),A.t(u.i,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.dx,"Acado Sup. pi\xf1on - Fp (Presionar)","En caso de no usar, ingrese 1",r)],l),B.r,B.G,B.x),s.k1),A.v(r,20,r),s.oc(),s.ka(),s.kb(),A.v(r,5,r),A.t(o+s.az,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oe(),A.v(r,5,r),A.t(n+s.ry,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.od(),s.o9(),s.o5(),A.v(r,15,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.bx,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.bb,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.fr,"Nombres y apellidos",m,r),A.v(r,20,r),new A.eC(s.fx,"Instituci\xf3n",m,r),A.v(r,20,r),new A.eC(s.fy,"Fecha","dd/mm/aa",r)],l),B.r,B.G,B.x),s.k2),A.v(r,15,r),A.bf(A.t("Generar PDF",r,r,r,r,r,r),s.gafN(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.v(r,15,r),A.bf(A.t("Generar Word",r,r,r,r,r,r),s.gafO(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],l),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],l))],t.xR),r),r),r),r)},
 k7(){var s=this.c
 s.toString
 A.ia(!0,new A.an4(this),s,t.z)},
@@ -52400,27 +52400,27 @@ k6(){var s=this.c
 s.toString
 A.ia(!0,new A.an2(this),s,t.z)},
 om(){var s=null
-return A.bg(A.t("Fact. forma Lewis",s,s,s,s,s,s),new A.aoZ(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Fact. forma Lewis",s,s,s,s,s,s),new A.aoZ(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oY(){var s=null
-return A.bg(A.t("Verif. Ancho de Cara",s,s,s,s,s,s),new A.ap2(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Verif. Ancho de Cara",s,s,s,s,s,s),new A.ap2(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 ke(){var s=null
-return A.bg(A.t("Ko",s,s,s,s,s,s),new A.aoF(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ko",s,s,s,s,s,s),new A.aoF(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oi(){var s=null
-return A.bg(A.t("Kv",s,s,s,s,s,s),new A.aoJ(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Kv",s,s,s,s,s,s),new A.aoJ(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oh(){var s=null
-return A.bg(A.t("Cpm",s,s,s,s,s,s),new A.aox(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Cpm",s,s,s,s,s,s),new A.aox(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 kd(){var s=null
-return A.bg(A.t("J",s,s,s,s,s,s),new A.aoB(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("J",s,s,s,s,s,s),new A.aoB(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 Dg(){var s=null
-return A.bg(A.t("Fm",s,s,s,s,s,s),new A.aoV(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Fm",s,s,s,s,s,s),new A.aoV(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oj(){var s=null
-return A.bg(A.t("YN",s,s,s,s,s,s),new A.aoN(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("YN",s,s,s,s,s,s),new A.aoN(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 o6(){var s=null
-return A.bg(A.t("Ingresar Datos",s,s,s,s,s,s),new A.an0(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar Datos",s,s,s,s,s,s),new A.an0(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 o5(){var s=null
-return A.bg(A.t("Ingresar Datos",s,s,s,s,s,s),new A.amX(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar Datos",s,s,s,s,s,s),new A.amX(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 og(){var s=null
-return A.bg(A.t("Cp",s,s,s,s,s,s),new A.aot(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Cp",s,s,s,s,s,s),new A.aot(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 kc(){var s=this.bt,r=A.R(s).n("E<1,aN<r>>")
 return A.aX(!0,A.W(new A.E(s,new A.aon(),r),!0,r.n("ae.E")),new A.aoo(this),this.hJ,t.N)},
 k8(){var s=this.bu,r=A.R(s).n("E<1,aN<r>>")
@@ -52454,7 +52454,7 @@ return A.aX(!0,A.W(new A.E(s,new A.ao5(),r),!0,r.n("ae.E")),new A.ao6(this),this
 o9(){var s=this.cY,r=A.R(s).n("E<1,aN<r>>")
 return A.aX(!0,A.W(new A.E(s,new A.anw(),r),!0,r.n("ae.E")),new A.anx(this),this.dS,t.N)},
 ol(){var s=null
-return A.bg(A.t("ZN",s,s,s,s,s,s),new A.aoR(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("ZN",s,s,s,s,s,s),new A.aoR(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 ek(){var s=0,r=A.ar(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5
 var $async$ek=A.as(function(e6,e7){if(e6===1)return A.ao(e7,r)
 while(true)switch(s){case 0:q.E=q.fr.a.a
@@ -52793,7 +52793,7 @@ j=c5.gk(c5).i(1)
 j.r=b9
 j.j(b9)
 j=c5.gk(c5).i(2)
-a3=B.a.p(A.c(k.a.a)/Math.cos(A.bf(i.a.a,null)*0.017453292519943295),3)
+a3=B.a.p(A.c(k.a.a)/Math.cos(A.bg(i.a.a,null)*0.017453292519943295),3)
 j.r=a3
 j.j(a3)
 A.a(c5.a,"_helper").w=!0
@@ -52899,7 +52899,7 @@ j=c6.gk(c6).i(1)
 j.r=b9
 j.j(b9)
 j=c6.gk(c6).i(2)
-a3=B.a.p(A.c(k.a.a)/Math.cos(A.bf(i.a.a,null)*0.017453292519943295),3)
+a3=B.a.p(A.c(k.a.a)/Math.cos(A.bg(i.a.a,null)*0.017453292519943295),3)
 j.r=a3
 j.j(a3)
 A.a(c6.a,"_helper").w=!0
@@ -53191,7 +53191,7 @@ c8=c9.gk(c9).i(1)
 c8.r=b9
 c8.j(b9)
 c8=c9.gk(c9).i(2)
-i=B.a.p(A.c(k.a.a)/Math.cos(A.bf(i.a.a,null)*0.017453292519943295),3)
+i=B.a.p(A.c(k.a.a)/Math.cos(A.bg(i.a.a,null)*0.017453292519943295),3)
 c8.r=i
 c8.j(i)
 A.a(c9.a,"_helper").w=!0
@@ -54082,7 +54082,7 @@ j=A.o("n_ciclos_pi\xf1on",B.a.eG(A.c(q.cx.a.a)))
 l.l(0,j.a,j)
 j=A.o("n_ciclos_corona",B.a.eG(A.c(q.ry)))
 l.l(0,j.a,j)
-m=A.o("mt",B.a.p(A.c(k.a.a)/Math.cos(A.bf(m.a.a,null)*0.017453292519943295),3))
+m=A.o("mt",B.a.p(A.c(k.a.a)*(1/Math.cos(A.c(m.a.a)*0.017453292519943295)),3))
 l.l(0,m.a,m)
 m=A.o("dp",B.a.p(A.c(q.k3),3))
 l.l(0,m.a,m)
@@ -54503,7 +54503,7 @@ $S:3}
 A.an9.prototype={
 $1(a){var s,r,q=this.a
 q.P(new A.an6(q,a))
-s=B.a.h(A.bf(q.d.a.a,null)*A.c(q.e.a.a)*(1/Math.cos(A.c(q.f.a.a)*0.017453292519943295))*0.001)
+s=B.a.h(A.bg(q.d.a.a,null)*A.c(q.e.a.a)*(1/Math.cos(A.c(q.f.a.a)*0.017453292519943295))*0.001)
 q.k3=s
 r=3.141592653589793*A.c(s)*A.c(q.r.a.a)/60
 q.p1=B.a.h(r)
@@ -54974,7 +54974,7 @@ k6(){var s=this.c
 s.toString
 A.ia(!0,new A.apo(this),s,t.z)},
 L(a,b){var s=this,r=null,q="Ingrese un valor",p="Ingrese un valor en Hb",o="Tablas y gr\xe1ficas",n="Ciclos del pi\xf1on: ",m="Ciclos de la corona: ",l="Ingrese su informaci\xf3n",k=t.D
-return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan Lewis",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,10,r),A.d4(A.b([s.om()],k),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.d,"N\xfamero de dientes pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.e,"Paso diametral","Ingrese un valor en d/in",r),A.v(r,20,r),new A.aw(s.f,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.r,"Potencia del motor","Ingrese un valor en Hp",r),A.v(r,20,r),new A.aw(s.w,"Dureza (Pi\xf1on)",p,r),A.v(r,20,r),new A.aw(s.z,u._,q,r),A.v(r,20,r),new A.aw(s.y,"Factor de Forma Lewis ",q,r),A.v(r,20,r),new A.aw(s.cy,"Relaci\xf3n de Transmici\xf3n - mg",q,r),A.v(r,20,r),new A.aw(s.ch,"Ciclos del pi\xf1on - N",q,r)],k),B.r,B.G,B.x),s.aU),A.v(r,10,r),s.k8(),s.o7(),A.v(r,10,r),s.oY(),A.v(r,10,r),A.t("Ancho Cara: "+s.bD+" in",r,r,r,r,r,r)],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2001-D04 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(o,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.oi(),s.oh()],k),B.r,B.ah,B.x),A.v(r,15,r),A.d4(A.b([s.kd(),s.oj()],k),B.r,B.ah,B.x),A.v(r,20,r),A.t("Velocidad: "+s.bZ+" fpm",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,5,r),A.t("N\xfamero de dientes de la corona: "+s.bc,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.CW,"Ancho de cara normalizado","Ingrese un valor entre "+s.bx+" y "+s.bb+" in",r),A.v(r,20,r),new A.aw(s.as,"Factor de sobrecarga - Ko ",q,r),A.v(r,20,r),new A.aw(s.at,"Factor Geom\xe9trico - J (Pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.ax,"Factor Geom\xe9trico - J (Corona)",q,r),A.v(r,20,r),new A.aw(s.x,"Dureza (Corona)",p,r),A.v(r,20,r),new A.aw(s.ay,"Factor de Espesor de Aro - Kb","Recomendado 1",r),A.v(r,20,r),A.t(u.p,r,r,r,r,r,r),A.v(r,20,r),new A.aw(s.Q,"Confiablidad","Ingrese un valor en decimales",r)],k),B.r,B.G,B.x),s.aW),A.v(r,10,r),s.kc(),s.pd(),s.pe(),s.o8(),s.of(),A.v(r,5,r),A.t(n+s.e8,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oa(),A.v(r,5,r),A.t(m+s.an,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.ob(),s.k9(),A.v(r,5,r),s.o6(),A.v(r,15,r),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.df,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.dM,r,r,r,r,r,r)],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.eA,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(o,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.og(),s.ol()],k),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.cx,"Coeficiente el\xe1stico - Cp","Ingrese un valor en psi",r),A.v(r,20,r),A.t(u.i,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.db,"Acado Sup. pi\xf1on - Fp (Presionar)","En caso de no usar, ingrese 1",r)],k),B.r,B.G,B.x),s.au),A.v(r,20,r),s.oc(),s.ka(),s.kb(),A.v(r,5,r),A.t(n+s.e8,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oe(),A.v(r,5,r),A.t(m+s.an,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.od(),s.o9(),s.o5(),A.v(r,15,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.bt,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.V,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.dx,"Nombres y apellidos",l,r),A.v(r,20,r),new A.eC(s.dy,"Instituci\xf3n",l,r),A.v(r,20,r),new A.eC(s.fr,"Fecha","dd/mm/aa",r)],k),B.r,B.G,B.x),s.aN),A.v(r,15,r),A.bg(A.t("Generar PDF",r,r,r,r,r,r),s.ga9Y(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.v(r,10,r),A.bg(A.t("Generar Word",r,r,r,r,r,r),s.ga9Z(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],k))],t.xR),r),r),r),r)},
+return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan Lewis",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,10,r),A.d4(A.b([s.om()],k),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.d,"N\xfamero de dientes pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.e,"Paso diametral","Ingrese un valor en d/in",r),A.v(r,20,r),new A.aw(s.f,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.r,"Potencia del motor","Ingrese un valor en Hp",r),A.v(r,20,r),new A.aw(s.w,"Dureza (Pi\xf1on)",p,r),A.v(r,20,r),new A.aw(s.z,u._,q,r),A.v(r,20,r),new A.aw(s.y,"Factor de Forma Lewis ",q,r),A.v(r,20,r),new A.aw(s.cy,"Relaci\xf3n de Transmici\xf3n - mg",q,r),A.v(r,20,r),new A.aw(s.ch,"Ciclos del pi\xf1on - N",q,r)],k),B.r,B.G,B.x),s.aU),A.v(r,10,r),s.k8(),s.o7(),A.v(r,10,r),s.oY(),A.v(r,10,r),A.t("Ancho Cara: "+s.bD+" in",r,r,r,r,r,r)],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2001-D04 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(o,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.oi(),s.oh()],k),B.r,B.ah,B.x),A.v(r,15,r),A.d4(A.b([s.kd(),s.oj()],k),B.r,B.ah,B.x),A.v(r,20,r),A.t("Velocidad: "+s.bZ+" fpm",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,5,r),A.t("N\xfamero de dientes de la corona: "+s.bc,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.CW,"Ancho de cara normalizado","Ingrese un valor entre "+s.bx+" y "+s.bb+" in",r),A.v(r,20,r),new A.aw(s.as,"Factor de sobrecarga - Ko ",q,r),A.v(r,20,r),new A.aw(s.at,"Factor Geom\xe9trico - J (Pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.ax,"Factor Geom\xe9trico - J (Corona)",q,r),A.v(r,20,r),new A.aw(s.x,"Dureza (Corona)",p,r),A.v(r,20,r),new A.aw(s.ay,"Factor de Espesor de Aro - Kb","Recomendado 1",r),A.v(r,20,r),A.t(u.p,r,r,r,r,r,r),A.v(r,20,r),new A.aw(s.Q,"Confiablidad","Ingrese un valor en decimales",r)],k),B.r,B.G,B.x),s.aW),A.v(r,10,r),s.kc(),s.pd(),s.pe(),s.o8(),s.of(),A.v(r,5,r),A.t(n+s.e8,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oa(),A.v(r,5,r),A.t(m+s.an,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.ob(),s.k9(),A.v(r,5,r),s.o6(),A.v(r,15,r),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.df,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.dM,r,r,r,r,r,r)],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.eA,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(o,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.og(),s.ol()],k),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.cx,"Coeficiente el\xe1stico - Cp","Ingrese un valor en psi",r),A.v(r,20,r),A.t(u.i,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.db,"Acado Sup. pi\xf1on - Fp (Presionar)","En caso de no usar, ingrese 1",r)],k),B.r,B.G,B.x),s.au),A.v(r,20,r),s.oc(),s.ka(),s.kb(),A.v(r,5,r),A.t(n+s.e8,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oe(),A.v(r,5,r),A.t(m+s.an,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.od(),s.o9(),s.o5(),A.v(r,15,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.bt,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.V,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.dx,"Nombres y apellidos",l,r),A.v(r,20,r),new A.eC(s.dy,"Instituci\xf3n",l,r),A.v(r,20,r),new A.eC(s.fr,"Fecha","dd/mm/aa",r)],k),B.r,B.G,B.x),s.aN),A.v(r,15,r),A.bf(A.t("Generar PDF",r,r,r,r,r,r),s.ga9Y(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.v(r,10,r),A.bf(A.t("Generar Word",r,r,r,r,r,r),s.ga9Z(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],k))],t.xR),r),r),r),r)},
 kc(){var s=this.ry,r=A.R(s).n("E<1,aN<r>>")
 return A.aX(!0,A.W(new A.E(s,new A.aqJ(),r),!0,r.n("ae.E")),new A.aqK(this),this.ae,t.N)},
 k8(){var s=this.fx,r=A.R(s).n("E<1,aN<r>>")
@@ -55008,27 +55008,27 @@ return A.aX(!0,A.W(new A.E(s,new A.aqr(),r),!0,r.n("ae.E")),new A.aqs(this),this
 o9(){var s=this.rx,r=A.R(s).n("E<1,aN<r>>")
 return A.aX(!0,A.W(new A.E(s,new A.apS(),r),!0,r.n("ae.E")),new A.apT(this),this.T,t.N)},
 om(){var s=null
-return A.bg(A.t("Factor de forma Lewis",s,s,s,s,s,s),new A.arg(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Factor de forma Lewis",s,s,s,s,s,s),new A.arg(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oY(){var s=null
-return A.bg(A.t("Verif. Ancho de Cara",s,s,s,s,s,s),new A.ark(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Verif. Ancho de Cara",s,s,s,s,s,s),new A.ark(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 ke(){var s=null
-return A.bg(A.t("Ko",s,s,s,s,s,s),new A.ar0(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ko",s,s,s,s,s,s),new A.ar0(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oi(){var s=null
-return A.bg(A.t("Qv",s,s,s,s,s,s),new A.ar4(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Qv",s,s,s,s,s,s),new A.ar4(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oh(){var s=null
-return A.bg(A.t("Cpm",s,s,s,s,s,s),new A.aqT(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Cpm",s,s,s,s,s,s),new A.aqT(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 kd(){var s=null
-return A.bg(A.t("J",s,s,s,s,s,s),new A.aqX(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("J",s,s,s,s,s,s),new A.aqX(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oj(){var s=null
-return A.bg(A.t("YN",s,s,s,s,s,s),new A.ar8(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("YN",s,s,s,s,s,s),new A.ar8(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 ol(){var s=null
-return A.bg(A.t("ZN",s,s,s,s,s,s),new A.arc(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("ZN",s,s,s,s,s,s),new A.arc(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 o6(){var s=null
-return A.bg(A.t("Ingresar Datos",s,s,s,s,s,s),new A.apm(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar Datos",s,s,s,s,s,s),new A.apm(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 o5(){var s=null
-return A.bg(A.t("Ingresar Datos",s,s,s,s,s,s),new A.api(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar Datos",s,s,s,s,s,s),new A.api(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 og(){var s=null
-return A.bg(A.t("Cp",s,s,s,s,s,s),new A.aqP(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Cp",s,s,s,s,s,s),new A.aqP(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 fq(){var s=0,r=A.ar(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0
 var $async$fq=A.as(function(e1,e2){if(e1===1)return A.ao(e2,r)
 while(true)switch(s){case 0:q.dY=q.dx.a.a
@@ -56861,7 +56861,7 @@ $S:3}
 A.apv.prototype={
 $1(a){var s,r,q=this.a
 q.P(new A.aps(q,a))
-s=B.a.h(A.bf(q.d.a.a,null)/A.c(q.e.a.a))
+s=B.a.h(A.bg(q.d.a.a,null)/A.c(q.e.a.a))
 q.aH=s
 r=3.141592653589793*A.c(s)*A.c(q.f.a.a)/12
 q.aP=B.a.h(r)
@@ -57393,7 +57393,7 @@ k6(){var s=this.c
 s.toString
 A.ia(!0,new A.app(this),s,t.z)},
 L(a,b){var s=this,r=null,q="Ingrese un valor",p="Ingrese un valor en Hb",o="Tablas y gr\xe1ficas",n="Ciclos del pi\xf1on: ",m="Ciclos de la corona: ",l="Ingrese su informaci\xf3n",k=t.D
-return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan Lewis",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,10,r),A.d4(A.b([s.om()],k),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.d,"N\xfamero de dientes pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.e,"M\xf3dulo","Ingrese un valor en mm",r),A.v(r,20,r),new A.aw(s.f,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.r,"Potencia del motor","Ingrese un valor en Kw",r),A.v(r,20,r),new A.aw(s.w,"Dureza (Pi\xf1on)",p,r),A.v(r,20,r),new A.aw(s.z,u._,q,r),A.v(r,20,r),new A.aw(s.y,"Factor de Forma Lewis ",q,r),A.v(r,20,r),new A.aw(s.cy,"Relaci\xf3n de Transmici\xf3n - mg",q,r),A.v(r,20,r),new A.aw(s.ch,"Ciclos del pi\xf1on - N",q,r)],k),B.r,B.G,B.x),s.aU),A.v(r,10,r),s.k8(),s.o7(),s.oY(),A.v(r,10,r),A.t("Ancho Cara: "+s.by+" mm",r,r,r,r,r,r)],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2101-D04 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(o,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.oi(),s.oh()],k),B.r,B.ah,B.x),A.v(r,15,r),A.d4(A.b([s.kd(),s.oj()],k),B.r,B.ah,B.x),A.v(r,20,r),A.t("Velocidad: "+s.e8+" m/s",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,5,r),A.t("N\xfamero de dientes de la corona: "+s.an,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.CW,"Ancho de cara normalizado","Ingrese un valor entre "+s.bD+" y "+s.bx+" mm",r),A.v(r,20,r),new A.aw(s.as,"Factor de sobrecarga - Ko ",q,r),A.v(r,20,r),new A.aw(s.at,"Factor Geom\xe9trico - J (Pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.ax,"Factor Geom\xe9trico - J (Corona)",q,r),A.v(r,20,r),new A.aw(s.x,"Dureza (Corona)",p,r),A.v(r,20,r),new A.aw(s.ay,"Factor de Espesor de Aro - Kb","Recomendado 1",r),A.v(r,20,r),A.t(u.p,r,r,r,r,r,r),A.v(r,20,r),new A.aw(s.Q,"Confiablidad","Ingrese un valor en decimales",r)],k),B.r,B.G,B.x),s.aW),A.v(r,20,r),s.kc(),s.pd(),s.pe(),s.o8(),s.of(),A.v(r,5,r),A.t(n+s.hj,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oa(),A.v(r,5,r),A.t(m+s.bb,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.ob(),s.k9(),A.v(r,5,r),s.o6(),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.dz,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.dT,r,r,r,r,r,r)],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.aE,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(o,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.og(),s.ol()],k),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.cx,"Coeficiente el\xe1stico - Cp","Ingrese un valor en MPa",r),A.v(r,20,r),A.t(u.i,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.db,"Acado Sup. pi\xf1on - Fp (Presionar)","En caso de no usar, ingrese 1",r)],k),B.r,B.G,B.x),s.au),A.v(r,20,r),s.oc(),s.ka(),s.kb(),A.v(r,5,r),A.t(n+s.hj,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oe(),A.v(r,5,r),A.t(m+s.bb,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.od(),s.o9(),s.o5(),A.v(r,15,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.cY,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.bt,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.dx,"Nombres y apellidos",l,r),A.v(r,20,r),new A.eC(s.dy,"Instituci\xf3n",l,r),A.v(r,20,r),new A.eC(s.fr,"Fecha","dd/mm/aa",r)],k),B.r,B.G,B.x),s.aN),A.v(r,15,r),A.bg(A.t("Generar PDF",r,r,r,r,r,r),s.gajC(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.v(r,15,r),A.bg(A.t("Generar Word",r,r,r,r,r,r),s.gajD(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],k))],t.xR),r),r),r),r)},
+return A.oR(new A.d1(new A.aE(0,0,0,b.a0(t.w).f.e.d),new A.d1(B.cb,A.t1(A.b([new A.h0(A.b([A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan Lewis",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,10,r),A.d4(A.b([s.om()],k),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.d,"N\xfamero de dientes pi\xf1on",q,r),A.v(r,20,r),new A.aw(s.e,"M\xf3dulo","Ingrese un valor en mm",r),A.v(r,20,r),new A.aw(s.f,"Velocidad del pi\xf1on","Ingrese un valor en r.p.m.",r),A.v(r,20,r),new A.aw(s.r,"Potencia del motor","Ingrese un valor en Kw",r),A.v(r,20,r),new A.aw(s.w,"Dureza (Pi\xf1on)",p,r),A.v(r,20,r),new A.aw(s.z,u._,q,r),A.v(r,20,r),new A.aw(s.y,"Factor de Forma Lewis ",q,r),A.v(r,20,r),new A.aw(s.cy,"Relaci\xf3n de Transmici\xf3n - mg",q,r),A.v(r,20,r),new A.aw(s.ch,"Ciclos del pi\xf1on - N",q,r)],k),B.r,B.G,B.x),s.aU),A.v(r,10,r),s.k8(),s.o7(),s.oY(),A.v(r,10,r),A.t("Ancho Cara: "+s.by+" mm",r,r,r,r,r,r)],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t("Dise\xf1o seg\xfan AGMA 2101-D04 Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(o,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.ke(),s.oi(),s.oh()],k),B.r,B.ah,B.x),A.v(r,15,r),A.d4(A.b([s.kd(),s.oj()],k),B.r,B.ah,B.x),A.v(r,20,r),A.t("Velocidad: "+s.e8+" m/s",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,5,r),A.t("N\xfamero de dientes de la corona: "+s.an,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.CW,"Ancho de cara normalizado","Ingrese un valor entre "+s.bD+" y "+s.bx+" mm",r),A.v(r,20,r),new A.aw(s.as,"Factor de sobrecarga - Ko ",q,r),A.v(r,20,r),new A.aw(s.at,"Factor Geom\xe9trico - J (Pi\xf1on)",q,r),A.v(r,20,r),new A.aw(s.ax,"Factor Geom\xe9trico - J (Corona)",q,r),A.v(r,20,r),new A.aw(s.x,"Dureza (Corona)",p,r),A.v(r,20,r),new A.aw(s.ay,"Factor de Espesor de Aro - Kb","Recomendado 1",r),A.v(r,20,r),A.t(u.p,r,r,r,r,r,r),A.v(r,20,r),new A.aw(s.Q,"Confiablidad","Ingrese un valor en decimales",r)],k),B.r,B.G,B.x),s.aW),A.v(r,20,r),s.kc(),s.pd(),s.pe(),s.o8(),s.of(),A.v(r,5,r),A.t(n+s.hj,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oa(),A.v(r,5,r),A.t(m+s.bb,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.ob(),s.k9(),A.v(r,5,r),s.o6(),A.t("Factores de Seguridad a Flexi\xf3n",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Flexi\xf3n - Pi\xf1on: "+s.dz,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Flexi\xf3n - Corona: "+s.dT,r,r,r,r,r,r)],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r),A.bW(r,A.bq(A.b([A.t(u.aE,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.t(o,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,10,r),A.d4(A.b([s.og(),s.ol()],k),B.r,B.ah,B.x),A.v(r,20,r),A.e4(A.bq(A.b([new A.aw(s.cx,"Coeficiente el\xe1stico - Cp","Ingrese un valor en MPa",r),A.v(r,20,r),A.t(u.i,r,r,r,r,B.a5,r),A.v(r,20,r),new A.aw(s.db,"Acado Sup. pi\xf1on - Fp (Presionar)","En caso de no usar, ingrese 1",r)],k),B.r,B.G,B.x),s.au),A.v(r,20,r),s.oc(),s.ka(),s.kb(),A.v(r,5,r),A.t(n+s.hj,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.oe(),A.v(r,5,r),A.t(m+s.bb,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,17,B.Y,B.l,r,r,!0,r,r,r,r,r,r,r,r),r,r),A.v(r,5,r),s.od(),s.o9(),s.o5(),A.v(r,15,r),A.t(u.E,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,20,r),A.t("F.S. Desg. Sup. - Pi\xf1on: "+s.cY,r,r,r,r,r,r),A.v(r,10,r),A.t("F.S. Desg. Sup. - Corona: "+s.bt,r,r,r,r,r,r),A.v(r,20,r),A.t("Generar Memorias de C\xe1lculo",r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,19,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),B.C,r),A.v(r,15,r),A.e4(A.bq(A.b([new A.eC(s.dx,"Nombres y apellidos",l,r),A.v(r,20,r),new A.eC(s.dy,"Instituci\xf3n",l,r),A.v(r,20,r),new A.eC(s.fr,"Fecha","dd/mm/aa",r)],k),B.r,B.G,B.x),s.aN),A.v(r,15,r),A.bf(A.t("Generar PDF",r,r,r,r,r,r),s.gajC(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r)),A.v(r,15,r),A.bf(A.t("Generar Word",r,r,r,r,r,r),s.gajD(),A.bb(r,r,r,r,r,r,r,r,r,r,r,B.p,r,r,r,r,A.Q(r,r,r,r,r,r,r,r,r,r,r,r,r,B.l,r,r,!0,r,r,r,r,r,r,r,r),r))],k),B.r,B.a8,B.x),B.t,r,r,r,r,r,new A.aE(15,15,15,15),r,r,r,r)],k))],t.xR),r),r),r),r)},
 kc(){var s=this.ry,r=A.R(s).n("E<1,aN<r>>")
 return A.aX(!0,A.W(new A.E(s,new A.aqL(),r),!0,r.n("ae.E")),new A.aqM(this),this.ae,t.N)},
 k8(){var s=this.fx,r=A.R(s).n("E<1,aN<r>>")
@@ -57423,31 +57423,31 @@ return A.aX(!0,A.W(new A.E(s,new A.aqn(),r),!0,r.n("ae.E")),new A.aqo(this),this
 oe(){var s=this.R8,r=A.R(s).n("E<1,aN<r>>")
 return A.aX(!0,A.W(new A.E(s,new A.aqz(),r),!0,r.n("ae.E")),new A.aqA(this),this.D,t.N)},
 ol(){var s=null
-return A.bg(A.t("ZN",s,s,s,s,s,s),new A.ard(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("ZN",s,s,s,s,s,s),new A.ard(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 od(){var s=this.RG,r=A.R(s).n("E<1,aN<r>>")
 return A.aX(!0,A.W(new A.E(s,new A.aqt(),r),!0,r.n("ae.E")),new A.aqu(this),this.a_,t.N)},
 o9(){var s=this.rx,r=A.R(s).n("E<1,aN<r>>")
 return A.aX(!0,A.W(new A.E(s,new A.apU(),r),!0,r.n("ae.E")),new A.apV(this),this.T,t.N)},
 om(){var s=null
-return A.bg(A.t("Fact. forma Lewis",s,s,s,s,s,s),new A.arh(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Fact. forma Lewis",s,s,s,s,s,s),new A.arh(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oY(){var s=null
-return A.bg(A.t("Verif. Ancho de Cara",s,s,s,s,s,s),new A.arl(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Verif. Ancho de Cara",s,s,s,s,s,s),new A.arl(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 ke(){var s=null
-return A.bg(A.t("Ko",s,s,s,s,s,s),new A.ar1(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ko",s,s,s,s,s,s),new A.ar1(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oi(){var s=null
-return A.bg(A.t("Qv",s,s,s,s,s,s),new A.ar5(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Qv",s,s,s,s,s,s),new A.ar5(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oh(){var s=null
-return A.bg(A.t("Cpm",s,s,s,s,s,s),new A.aqU(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Cpm",s,s,s,s,s,s),new A.aqU(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 kd(){var s=null
-return A.bg(A.t("J",s,s,s,s,s,s),new A.aqY(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("J",s,s,s,s,s,s),new A.aqY(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 oj(){var s=null
-return A.bg(A.t("YN",s,s,s,s,s,s),new A.ar9(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("YN",s,s,s,s,s,s),new A.ar9(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 o6(){var s=null
-return A.bg(A.t("Ingresar Datos",s,s,s,s,s,s),new A.apn(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar Datos",s,s,s,s,s,s),new A.apn(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 o5(){var s=null
-return A.bg(A.t("Ingresar Datos",s,s,s,s,s,s),new A.apj(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Ingresar Datos",s,s,s,s,s,s),new A.apj(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 og(){var s=null
-return A.bg(A.t("Cp",s,s,s,s,s,s),new A.aqQ(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
+return A.bf(A.t("Cp",s,s,s,s,s,s),new A.aqQ(this),A.bb(s,s,s,s,s,s,s,s,s,s,s,B.p,s,s,s,s,A.Q(s,s,s,s,s,s,s,s,s,s,s,s,s,B.l,s,s,!0,s,s,s,s,s,s,s,s),s))},
 fu(){var s=0,r=A.ar(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0
 var $async$fu=A.as(function(e1,e2){if(e1===1)return A.ao(e2,r)
 while(true)switch(s){case 0:q.cA=q.dx.a.a
@@ -59262,7 +59262,7 @@ $S:3}
 A.apx.prototype={
 $1(a){var s,r,q=this.a
 q.P(new A.apt(q,a))
-s=B.a.h(A.bf(q.d.a.a,null)*A.c(q.e.a.a)*0.001)
+s=B.a.h(A.bg(q.d.a.a,null)*A.c(q.e.a.a)*0.001)
 q.aH=s
 r=3.141592653589793*A.c(s)*A.c(q.f.a.a)/60
 q.aP=B.a.h(r)
@@ -95526,7 +95526,7 @@ gH(a){return B.a.gH(A.a(this.a,"x"))}}
 A.a2N.prototype={
 mC(){var s,r=this
 r.w.a=""
-s=A.b5(A.bf(r.ahk(),null))
+s=A.b5(A.bg(r.ahk(),null))
 switch(s){case"%":return r.acB()
 case"/":return r.ad0()
 case"+":case"-":return r.EL()
@@ -95579,31 +95579,31 @@ r.w.a=""
 for(;!0;){s=r.iI()
 if(r.agA(s)||r.a9N(s))break}return B.PK},
 EL(){var s=this,r=null,q=s.b
-if(q==="43"||q==="45"){s.w.a+=A.b5(A.bf(q,r))
-q=s.ja()}for(;!0;){if((B.e.al(A.b5(A.bf(q,r)),0)^48)<=9)s.w.a+=A.b5(A.bf(s.b,r))
-else if(q==="46")s.w.a+=A.b5(A.bf(s.b,r))
+if(q==="43"||q==="45"){s.w.a+=A.b5(A.bg(q,r))
+q=s.ja()}for(;!0;){if((B.e.al(A.b5(A.bg(q,r)),0)^48)<=9)s.w.a+=A.b5(A.bg(s.b,r))
+else if(q==="46")s.w.a+=A.b5(A.bg(s.b,r))
 else break
 q=s.ja()}return B.PH},
-iI(){var s=this,r=A.b5(A.bf(s.b,null)),q=s.w.a+=r
+iI(){var s=this,r=A.b5(A.bg(s.b,null)),q=s.w.a+=r
 if(s.r&&B.e.G(q.charCodeAt(0)==0?q:q,"/Contents")&&!s.f){s.e=!0
-if(A.b5(A.bf(s.c,null))===")"&&A.b5(A.bf(s.b,null))!=="\\"){s.e=!1
+if(A.b5(A.bg(s.c,null))===")"&&A.b5(A.bg(s.b,null))!=="\\"){s.e=!1
 s.f=!0}}return s.ja()},
 acX(){var s,r,q,p=this,o=null
 p.w.a=""
-A.b5(A.bf(p.b,o))
+A.b5(A.bg(p.b,o))
 s=p.b
 r=p.iI()
-for(;!0;)if(A.b5(A.bf(s,o))==="("){q=p.PP(r)
+for(;!0;)if(A.b5(A.bg(s,o))==="("){q=p.PP(r)
 p.w.a+=q
-A.b5(A.bf(p.ja(),o))
-break}else{if(A.b5(A.bf(r,o))==="("){q=p.PP(p.iI())
+A.b5(A.bg(p.ja(),o))
+break}else{if(A.b5(A.bg(r,o))==="("){q=p.PP(p.iI())
 p.w.a+=q
 r=p.ja()
-continue}else if(A.b5(A.bf(r,o))==="]"){p.iI()
+continue}else if(A.b5(A.bg(r,o))==="]"){p.iI()
 break}r=p.iI()}return B.PI},
 PP(a){var s,r,q,p=this
-for(s=0,r="";!0;){a=A.b5(A.bf(a,null))
-if(a==="\\"){r=r+a+A.b5(A.bf(p.ja(),null))
+for(s=0,r="";!0;){a=A.b5(A.bg(a,null))
+if(a==="\\"){r=r+a+A.b5(A.bg(p.ja(),null))
 a=p.ja()
 continue}if(a==="("){++s
 r+=a
@@ -95614,22 +95614,22 @@ a=p.ja();--s
 continue}if(q&&s===0)return r+a
 r+=a
 a=p.ja()}},
-acP(){var s,r,q=this,p=null,o=A.b5(A.bf(q.iI(),p))
+acP(){var s,r,q=this,p=null,o=A.b5(A.bg(q.iI(),p))
 for(s=0;!0;)if(o==="<"){++s
-o=A.b5(A.bf(q.iI(),p))}else{r=o===">"
+o=A.b5(A.bg(q.iI(),p))}else{r=o===">"
 if(r&&!q.e)if(s===0){q.iI()
-break}else if(s===1){o=A.b5(A.bf(q.iI(),p))
+break}else if(s===1){o=A.b5(A.bg(q.iI(),p))
 if(o===">")--s
 if(s===1)if(o!==" ")r=q.r&&o==="B"
 else r=!0
 else r=!1
 if(r)break}else{if(r)--s
-o=A.b5(A.bf(q.iI(),p))}else o=A.b5(A.bf(q.iI(),p))}q.r=q.f=!1
+o=A.b5(A.bg(q.iI(),p))}else o=A.b5(A.bg(q.iI(),p))}q.r=q.f=!1
 return B.PJ},
 PS(){var s,r=this
 r.w.a=""
-s=A.b5(A.bf(r.b,null))
-for(;r.agz(s);)s=A.b5(A.bf(r.iI(),null))
+s=A.b5(A.bg(r.b,null))
+for(;r.agz(s);)s=A.b5(A.bg(r.iI(),null))
 return B.PL},
 BW(){var s,r=this,q=r.a
 q.toString
@@ -95706,30 +95706,30 @@ q=new A.DC(n,o)}J.cA(A.a(this.c.a,"recordCollection"),q)},
 OB(a){return this.OC(a,null)},
 a9M(a){var s,r,q,p,o,n,m,l=this,k=null,j="_lexer",i=A.b([],t.t)
 for(;!0;){s=A.a(l.a,j).La()
-if(A.b5(A.bf(s,k))==="E"){r=A.a(l.a,j).BW()
-if(A.b5(A.bf(r,k))==="I"){q=A.a(l.a,j).BW()
-p=A.b5(A.bf(q,k))
+if(A.b5(A.bg(s,k))==="E"){r=A.a(l.a,j).BW()
+if(A.b5(A.bg(r,k))==="I"){q=A.a(l.a,j).BW()
+p=A.b5(A.bg(q,k))
 o=A.a(l.a,j).L9(!0)
 n=0
-while(!0){if(!(A.b5(A.bf(o,k))===" "||A.b5(A.bf(o,k))==="\r"||A.b5(A.bf(o,k))==="\n"))break
+while(!0){if(!(A.b5(A.bg(o,k))===" "||A.b5(A.bg(o,k))==="\r"||A.b5(A.bg(o,k))==="\n"))break
 o=A.a(l.a,j).ja();++n}if(!A.a(l.f,"isTextExtractionProcess"))A.a(l.a,j).d-=n
-if(p===" "||p==="\n"||q==="65535"||p==="\r"){if(A.b5(A.bf(o,k))==="Q"||o==="65535"||A.b5(A.bf(o,k))==="S"){m=l.b
+if(p===" "||p==="\n"||q==="65535"||p==="\r"){if(A.b5(A.bg(o,k))==="Q"||o==="65535"||A.b5(A.bg(o,k))==="S"){m=l.b
 m.a=""
-m.a+=A.b5(A.bf(s,k))
+m.a+=A.b5(A.bg(s,k))
 m=l.b
 m.toString
-m.a+=A.b5(A.bf(r,k))
+m.a+=A.b5(A.bg(r,k))
 l.d=!0
 l.OC(a,i)
 l.d=!1
 B.d.sB(i,0)
 A.a(l.a,j).BW()
-break}}else{i.push(A.bf(s,k))
-i.push(A.bf(r,k))
-i.push(A.bf(q,k))
-i.push(A.bf(o,k))
-A.a(l.a,j).La()}}else{i.push(A.bf(s,k))
-i.push(A.bf(r,k))}}else i.push(A.bf(s,k))}}}
+break}}else{i.push(A.bg(s,k))
+i.push(A.bg(r,k))
+i.push(A.bg(q,k))
+i.push(A.bg(o,k))
+A.a(l.a,j).La()}}else{i.push(A.bg(s,k))
+i.push(A.bg(r,k))}}else i.push(A.bg(s,k))}}}
 A.abq.prototype={}
 A.DC.prototype={}
 A.uZ.prototype={
@@ -113847,8 +113847,8 @@ A.T2.prototype={
 apk(a){var s=a.length
 if(s>1&&a[0]==="#"){if(s>2){s=a[1]
 s=s==="x"||s==="X"}else s=!1
-if(s)return A.b5(A.bf(B.e.dd(a,2),16))
-else return A.b5(A.bf(B.e.dd(a,1),null))}else return B.LW.m(0,a)},
+if(s)return A.b5(A.bg(B.e.dd(a,2),16))
+else return A.b5(A.bg(B.e.dd(a,1),null))}else return B.LW.m(0,a)},
 aq7(a,b){switch(b.a){case 0:return A.aCx(a,$.aMG(),A.aZ3(),null)
 case 1:return A.aCx(a,$.aMg(),A.aZ2(),null)}}}
 A.awG.prototype={
