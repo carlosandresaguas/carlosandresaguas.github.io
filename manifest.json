@@ -1,11 +1,11 @@
 {
-    "name": "Herramientas para el diseño",
-    "short_name": "Herramientas para el diseño",
+    "name": "dem_windows",
+    "short_name": "dem_windows",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Herramientas enfocadas al diseño de elementos de maquina",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
